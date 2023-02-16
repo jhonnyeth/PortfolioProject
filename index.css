@@ -1,0 +1,19 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+h1 {
+  text-align: center;
+}
+a {
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration: underline solid aqua;
+  /*background-color: yellow;*/
+}
+
+img {
+  width: 200px;ß
+}
