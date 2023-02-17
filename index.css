@@ -1,19 +1,144 @@
-* {
-  background-color: black;
+*{
   color: white;
   font-family: Arial;
 }
-h1 {
-  text-align: center;
+body{
+    background-color: rgb(53, 50, 50);
 }
-a {
-  text-decoration-line: none;
+/* Links */
+.linkbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(178, 178, 178);
+  position: sticky;
+  top: 0'
 }
-a:hover {
-  text-decoration: underline solid aqua;
-  /*background-color: yellow;*/
+.linkbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px
+}
+.linkbar ul li a{
+    text-decoration: none;
+    padding: 8px 25px
+}
+.linkbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
 }
 
-img {
-  width: 200px;ß
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: url("clearimage.png") no-repeat center;
+    height: 900px;
+    width: 100%;
+    background-size: 40rem;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white;*/
+    align-items: center;
+    position:absolute;
+    bottom: 25%;
+}
+.headings{
+    font-family:century;
+    font-size: 3rem; /*3rem*/
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/* Bio */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display:flex;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+h2 {
+    padding: 30px;
+}
+
+/* Experience */
+#exp{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.7);
+    align-items: center;
+    padding: 20px
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+#exp .fsize{
+    font-size: 30px;
+}
+
+/* Portfolio */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(121, 255, 172) 50%, rgb(145, 140, 140) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    box-shadow: 0 0 10px white;
+    color: red;
+}
+#portfolio .class{
+    color:black;
 }
